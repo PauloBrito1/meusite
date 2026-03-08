@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paulo Brito — Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">PB<span class="nav__dot">.</span></a>
+      <ul class="nav__links">
+        <li><a href="#sobre">sobre</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projetos">projetos</a></li>
+        <li><a href="#contato">contato</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav__mobile" id="mobileMenu">
+      <li><a href="#sobre">sobre</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projetos">projetos</a></li>
+      <li><a href="#contato">contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <!-- decorative bg doodles -->
+    <div class="doodle doodle--circle doodle--top-left"></div>
+    <div class="doodle doodle--star doodle--top-right"></div>
+    <div class="doodle doodle--zigzag doodle--bottom-left"></div>
+
+    <div class="hero__inner container">
+      <div class="hero__text">
+        <div class="hero__tag">olá, mundo!</div>
+        <h1 class="hero__name">
+          Paulo<br/>
+          <span class="hero__name--accent">Brito</span>
+          <span class="hero__name--mark">*</span>
+        </h1>
+        <p class="hero__desc">
+          Desenvolvedor Júnior apaixonado por transformar ideias em software real —
+          de APIs que respiram até interfaces que conversam.
+        </p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--primary">ver projetos</a>
+          <a href="#contato" class="btn btn--secondary">me chama</a>
+        </div>
+      </div>
+
+      <div class="hero__card-wrap">
+        <!-- hand-drawn "id card" -->
+        <div class="id-card" aria-hidden="true">
+          <div class="id-card__tape"></div>
+          <div class="id-card__avatar">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="28" r="16" stroke="#2d2d2d" stroke-width="2.5"/>
+              <path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="#2d2d2d" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="id-card__name">Paulo Brito</div>
+          <div class="id-card__role">Dev Júnior</div>
+          <div class="id-card__badges">
+            <span class="badge">Python</span>
+            <span class="badge">Django</span>
+            <span class="badge">React</span>
+          </div>
+          <div class="id-card__footer">21 anos · SP, Brasil</div>
+        </div>
+
+        <!-- bouncing circle decoration (desktop only) -->
+        <div class="hero__bounce-circle" aria-hidden="true"></div>
+
+        <!-- hand-drawn arrow pointing at card (desktop only) -->
+        <svg class="hero__arrow" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 10 Q 40 40, 70 20" stroke="#ff4d4d" stroke-width="3" stroke-dasharray="6 4" stroke-linecap="round" fill="none"/>
+          <path d="M60 10 L70 20 L58 24" stroke="#ff4d4d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- scroll hint -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span>scroll</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d2d2d" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="section__label">// sobre mim</div>
+      <div class="sobre__grid">
+        <div class="sobre__text">
+          <h2 class="section__title">Quem sou eu<span class="wiggle">?</span></h2>
+          <p>
+            Sou formado em <strong>Ciência da Computação pela Uninove</strong> (2022–2026),
+            com 1 ano de experiência prática em desenvolvimento de software.
+          </p>
+          <p>
+            Atuei no projeto, criação e automação de sistemas de extração de dados usando
+            <strong>Python</strong> e integração com <strong>APIs REST</strong>. Também
+            desenvolvi aplicações web com <strong>Flask</strong> — do backend à entrega de
+            soluções funcionais e escaláveis.
+          </p>
+          <p>
+            Gosto de resolver problemas reais com código limpo e de continuar aprendendo
+            todo dia.
+          </p>
+          <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener" class="btn btn--secondary">LinkedIn</a>
+        </div>
+
+        <div class="sobre__facts">
+          <div class="fact-card fact-card--yellow" style="transform: rotate(2deg)">
+            <div class="fact-card__num">1+</div>
+            <div class="fact-card__label">ano de experiência</div>
+          </div>
+          <div class="fact-card" style="transform: rotate(-1.5deg)">
+            <div class="fact-card__num">21</div>
+            <div class="fact-card__label">anos de idade</div>
+          </div>
+          <div class="fact-card" style="transform: rotate(1deg)">
+            <div class="fact-card__num">∞</div>
+            <div class="fact-card__label">curiosidade</div>
+          </div>
+          <div class="fact-card fact-card--yellow" style="transform: rotate(-2deg)">
+            <div class="fact-card__num">SP</div>
+            <div class="fact-card__label">São Paulo, Brasil</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__label">// habilidades</div>
+      <h2 class="section__title">O que eu uso</h2>
+
+      <div class="skills__grid">
+
+        <div class="skill-group">
+          <div class="skill-group__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d2d2d" stroke-width="2.5" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Backend
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill skill-pill--accent">Django</span>
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill skill-pill--blue">APIs REST</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d2d2d" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Frontend
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--accent">React</span>
+            <span class="skill-pill">HTML</span>
+            <span class="skill-pill">CSS</span>
+            <span class="skill-pill">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d2d2d" stroke-width="2.5" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            Outros
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill skill-pill--blue">Web Scraping</span>
+            <span class="skill-pill">Automação</span>
+            <span class="skill-pill">SQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section projetos" id="projetos">
+    <div class="container">
+      <div class="section__label">// projetos</div>
+      <h2 class="section__title">O que eu construí</h2>
+
+      <div class="projects__grid">
+
+        <!-- Featured project -->
+        <article class="project-card project-card--featured">
+          <div class="project-card__tape"></div>
+          <div class="project-card__header">
+            <span class="project-card__tag">projeto principal</span>
+            <div class="project-card__links">
+              <a href="https://simulador-vers-o-4-1.onrender.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="Abrir projeto">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Simulador</h3>
+          <p class="project-card__desc">
+            Aplicação web interativa hospedada no Render. Interface funcional com
+            lógica de simulação desenvolvida do zero.
+          </p>
+          <div class="project-card__techs">
+            <span class="badge badge--dark">Python</span>
+            <span class="badge badge--dark">Flask</span>
+            <span class="badge badge--dark">HTML/CSS/JS</span>
+          </div>
+          <a href="https://simulador-vers-o-4-1.onrender.com/" target="_blank" rel="noopener" class="btn btn--primary project-card__cta">
+            acessar projeto →
+          </a>
+        </article>
+
+        <!-- Placeholder project 2 -->
+        <article class="project-card" style="transform: rotate(-1deg)">
+          <div class="project-card__tack"></div>
+          <div class="project-card__header">
+            <span class="project-card__tag">em breve</span>
+          </div>
+          <h3 class="project-card__title">Extração de Dados</h3>
+          <p class="project-card__desc">
+            Sistema de web scraping e automação para extração e processamento
+            de dados via APIs REST.
+          </p>
+          <div class="project-card__techs">
+            <span class="badge badge--dark">Python</span>
+            <span class="badge badge--dark">APIs REST</span>
+            <span class="badge badge--dark">Automação</span>
+          </div>
+        </article>
+
+        <!-- Placeholder project 3 -->
+        <article class="project-card" style="transform: rotate(1.5deg)">
+          <div class="project-card__tack project-card__tack--blue"></div>
+          <div class="project-card__header">
+            <span class="project-card__tag">em desenvolvimento</span>
+          </div>
+          <h3 class="project-card__title">API com FastAPI</h3>
+          <p class="project-card__desc">
+            Backend REST com FastAPI, documentação automática via Swagger
+            e deploy containerizado.
+          </p>
+          <div class="project-card__techs">
+            <span class="badge badge--dark">FastAPI</span>
+            <span class="badge badge--dark">Python</span>
+            <span class="badge badge--dark">Docker</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contato" id="contato">
+    <div class="container">
+      <div class="section__label">// contato</div>
+      <h2 class="section__title">Vamos conversar<span class="wiggle">!</span></h2>
+
+      <div class="contato__grid">
+        <div class="contato__text">
+          <p>
+            Aberto a oportunidades, freelas e bate-papos sobre tecnologia.
+            Me manda uma mensagem!
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:paulo@email.com" class="contact-link">
+              <span class="contact-link__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span>paulo@email.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </span>
+              <span>linkedin.com/in/paulobrito</span>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </span>
+              <span>github.com/paulobrito</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">seu nome</label>
+            <input type="text" id="name" name="name" placeholder="João Silva" required />
+          </div>
+          <div class="form-group">
+            <label for="email">seu email</label>
+            <input type="email" id="email" name="email" placeholder="joao@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">mensagem</label>
+            <textarea id="message" name="message" rows="4" placeholder="Oi Paulo, tenho um projeto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">enviar mensagem</button>
+          <div class="form__feedback" id="formFeedback"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>feito com <span class="footer__heart">♥</span> e muito café por Paulo Brito</p>
+      <p class="footer__year">2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
