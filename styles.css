@@ -326,6 +326,13 @@ strong { font-weight: 700; }
   box-shadow: var(--shadow-sm);
 }
 .id-card__avatar svg { width: 100%; height: 100%; padding: 6px; }
+.id-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
 
 .id-card__name {
   font-family: var(--font-head);
@@ -464,6 +471,78 @@ strong { font-weight: 700; }
   font-size: 0.85rem;
   margin-top: 0.3rem;
   opacity: 0.8;
+}
+
+/* ===================================================
+   EXPERIÊNCIA
+   =================================================== */
+.experiencia {
+  background: var(--bg);
+}
+
+.exp__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.exp-item {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: var(--r-wobbly-md);
+  box-shadow: var(--shadow);
+  padding: 1.8rem;
+}
+
+.exp-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.exp-item__role {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.exp-item__company {
+  font-size: 0.95rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.exp-item__period {
+  font-size: 0.85rem;
+  opacity: 0.65;
+  white-space: nowrap;
+  padding-top: 0.2rem;
+}
+
+.exp-item__bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.exp-item__bullets li {
+  font-size: 0.97rem;
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.exp-item__bullets li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
 }
 
 /* ===================================================

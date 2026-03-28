@@ -110,7 +110,14 @@ pills.forEach(pill => {
 });
 
 
-// ── Contact form — fake submit (no backend) ───────────
+// ── EmailJS config — preencha com suas credenciais ───
+const EMAILJS_PUBLIC_KEY  = 'OQBTwTC7MOVXfoSy8';
+const EMAILJS_SERVICE_ID  = 'service_cc4bt7t';
+const EMAILJS_TEMPLATE_ID = 'template_gbaukn6';
+
+emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+// ── Contact form ──────────────────────────────────────
 const contactForm = document.getElementById('contactForm');
 const feedback    = document.getElementById('formFeedback');
 
@@ -121,8 +128,8 @@ contactForm.addEventListener('submit', (e) => {
   const message = contactForm.message.value.trim();
 
   if (!name || !email || !message) {
-    feedback.textContent  = 'preenche todos os campos!';
-    feedback.className    = 'form__feedback error';
+    feedback.textContent = 'preenche todos os campos!';
+    feedback.className   = 'form__feedback error';
     return;
   }
 
@@ -133,18 +140,29 @@ contactForm.addEventListener('submit', (e) => {
     return;
   }
 
-  // Simulate success
   const btn = contactForm.querySelector('button[type="submit"]');
-  btn.textContent  = 'enviando...';
-  btn.disabled     = true;
+  btn.textContent = 'enviando...';
+  btn.disabled    = true;
 
-  setTimeout(() => {
+  emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+    from_name:  name,
+    from_email: email,
+    message:    message,
+  })
+  .then(() => {
     feedback.textContent = `Mensagem recebida, ${name.split(' ')[0]}! Respondo em breve.`;
     feedback.className   = 'form__feedback success';
     contactForm.reset();
+  })
+  .catch((err) => {
+    console.error('EmailJS error:', err);
+    feedback.textContent = `Erro: ${err?.status} — ${err?.text}`;
+    feedback.className   = 'form__feedback error';
+  })
+  .finally(() => {
     btn.textContent = 'enviar mensagem';
     btn.disabled    = false;
-  }, 1000);
+  });
 });
 
 
