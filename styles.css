@@ -987,7 +987,7 @@ strong { font-weight: 700; }
   }
   .hero__actions { justify-content: center; }
   .hero__desc    { margin-inline: auto; }
-  .hero__card-wrap { display: none; } /* hide card on small screens for breathing room */
+  .hero__card-wrap { display: none; }
 
   .sobre__grid {
     grid-template-columns: 1fr;
