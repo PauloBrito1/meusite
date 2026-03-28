@@ -981,6 +981,10 @@ strong { font-weight: 700; }
   .nav__links { display: none; }
   .nav__burger { display: flex; }
 
+  .hero {
+    min-height: auto;
+    padding: 3rem 0 2rem;
+  }
   .hero__inner {
     grid-template-columns: 1fr;
     text-align: center;
@@ -988,6 +992,7 @@ strong { font-weight: 700; }
   .hero__actions { justify-content: center; }
   .hero__desc    { margin-inline: auto; }
   .hero__card-wrap { display: none; }
+  .doodle { display: none; }
 
   .sobre__grid {
     grid-template-columns: 1fr;
