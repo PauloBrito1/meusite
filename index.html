@@ -6,7 +6,8 @@
   <title>Paulo Brito — Dev</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&family=Nunito:wght@600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="image.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -74,17 +75,12 @@
             <span class="badge">FastAPI</span>
             <span class="badge">React</span>
           </div>
-          <div class="id-card__footer">Vyttra Diagnósticos · SP, Brasil</div>
+          <div class="id-card__footer">São Paulo, SP</div>
         </div>
 
         <!-- bouncing circle decoration (desktop only) -->
         <div class="hero__bounce-circle" aria-hidden="true"></div>
 
-        <!-- hand-drawn arrow pointing at card (desktop only) -->
-        <svg class="hero__arrow" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M10 10 Q 40 40, 70 20" stroke="#ff4d4d" stroke-width="3" stroke-dasharray="6 4" stroke-linecap="round" fill="none"/>
-          <path d="M60 10 L70 20 L58 24" stroke="#ff4d4d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
       </div>
     </div>
 
@@ -121,12 +117,16 @@
           <div class="certs">
             <p class="certs__label">certificados</p>
             <a href="https://coursera.org/share/1ad17370541e89595962ec36abcbc7cc" target="_blank" rel="noopener" class="cert-badge">
-              <span class="cert-badge__issuer">Meta</span>
+              <span class="cert-badge__issuer">
+                <img src="Meta-Logo.png" alt="Meta" height="14">
+              </span>
               <span class="cert-badge__name">Programming in Python</span>
               <span class="cert-badge__arrow">↗</span>
             </a>
             <a href="https://coursera.org/share/b7cad4feb1e800787400f804c489e389" target="_blank" rel="noopener" class="cert-badge">
-              <span class="cert-badge__issuer">Meta</span>
+              <span class="cert-badge__issuer">
+                <img src="Meta-Logo.png" alt="Meta" height="14">
+              </span>
               <span class="cert-badge__name">Introduction to Back-End Development</span>
               <span class="cert-badge__arrow">↗</span>
             </a>
@@ -288,7 +288,7 @@
           <div class="project-card__header">
             <span class="project-card__tag">entregue</span>
           </div>
-          <h3 class="project-card__title">Digitalização de Prospecção</h3>
+          <h3 class="project-card__title">Extrator Inteligente de Documentos</h3>
           <p class="project-card__desc">
             Aplicação web que realiza upload de PDFs, extrai e organiza dados automaticamente,
             gera Excel estruturado e importa para SQL Server — eliminando trabalho manual
@@ -315,8 +315,83 @@
           <div class="project-card__techs">
             <span class="badge badge--dark">Python</span>
             <span class="badge badge--dark">APIs REST</span>
-            <span class="badge badge--dark">Parquet</span>
+            <span class="badge badge--dark">Postman</span>
           </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" style="transform: rotate(-1.2deg)">
+          <div class="project-card__tack"></div>
+          <div class="project-card__header">
+            <span class="project-card__tag">entregue</span>
+          </div>
+          <h3 class="project-card__title">Integração Smartsheet</h3>
+          <p class="project-card__desc">
+            Pipeline de extração e conversão de dados para o formato Parquet via API,
+            otimizando armazenamento e viabilizando análises estratégicas.
+          </p>
+          <div class="project-card__techs">
+            <span class="badge badge--dark">Python</span>
+            <span class="badge badge--dark">Smartsheet API</span>
+            <span class="badge badge--dark">Postman</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" style="transform: rotate(0.8deg)">
+          <div class="project-card__tack project-card__tack--blue"></div>
+          <div class="project-card__header">
+            <span class="project-card__tag">entregue</span>
+          </div>
+          <h3 class="project-card__title">Automação de Rotinas Operacionais</h3>
+          <p class="project-card__desc">
+            Automações de documentos e e-mails com uso extensivo de LLMs (Claude, Codex e Gemini)
+            para criação de MVPs rápidos e eliminação de trabalho manual.
+          </p>
+          <div class="project-card__techs">
+            <span class="badge badge--dark">Python</span>
+            <span class="badge badge--dark">Claude</span>
+            <span class="badge badge--dark">Codex</span>
+          </div>
+        </article>
+
+        <!-- GitHub repos card -->
+        <article class="project-card project-card--github" style="transform: rotate(-0.5deg)">
+          <div class="project-card__tape"></div>
+          <div class="project-card__header">
+            <span class="project-card__tag">github</span>
+          </div>
+          <h3 class="project-card__title">Projetos no GitHub</h3>
+          <ul class="github-links">
+            <li>
+              <a href="https://github.com/PauloBrito11/Tratamento-de-dados-utilizando-R" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span class="github-links__name">Tratamento de Dados</span>
+                <span class="github-links__badge">R</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/PauloBrito11/Regressao-linear-em-python" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span class="github-links__name">Regressão Linear</span>
+                <span class="github-links__badge">Python</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/PauloBrito11/Regressao_Linear_Simples_Em_R" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span class="github-links__name">Regressão Linear Simples</span>
+                <span class="github-links__badge">R</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/PauloBrito11/Machine-Learning-utilizando-R" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span class="github-links__name">Machine Learning</span>
+                <span class="github-links__badge github-links__badge--accent">R</span>
+              </a>
+            </li>
+          </ul>
         </article>
 
       </div>

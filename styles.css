@@ -127,7 +127,7 @@ strong { font-weight: 700; }
   border: 2px solid var(--border);
   border-radius: var(--r-wobbly-sm);
   background: var(--yellow);
-  font-family: var(--font-body);
+  font-family: 'Nunito', sans-serif;
 }
 .badge--dark {
   background: var(--fg);
@@ -503,12 +503,8 @@ strong { font-weight: 700; }
   box-shadow: none;
 }
 .cert-badge__issuer {
-  font-family: var(--font-head);
-  font-size: 0.8rem;
-  background: var(--accent);
-  color: #fff;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
 }
 .cert-badge__name {
@@ -746,6 +742,43 @@ strong { font-weight: 700; }
 .project-card__cta {
   font-size: 0.95rem;
   padding: 0.4rem 1rem;
+}
+
+.github-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.github-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: var(--r-wobbly-sm);
+  transition: background 0.15s;
+}
+.github-links a:hover {
+  background: var(--muted);
+}
+.github-links__name {
+  flex: 1;
+}
+.github-links__badge {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  background: var(--blue);
+  color: #fff;
+  flex-shrink: 0;
+}
+.github-links__badge--accent {
+  background: var(--accent);
 }
 
 .icon-btn {
