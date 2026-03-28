@@ -473,6 +473,53 @@ strong { font-weight: 700; }
   opacity: 0.8;
 }
 
+/* ── Certificados ── */
+.certs {
+  margin-top: 1.5rem;
+}
+.certs__label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+  margin-bottom: 0.6rem;
+}
+.cert-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--border);
+  border-radius: var(--r-wobbly-sm);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  color: var(--fg);
+  margin-bottom: 0.5rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.cert-badge:hover {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+.cert-badge__issuer {
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.cert-badge__name {
+  font-size: 0.9rem;
+  flex: 1;
+}
+.cert-badge__arrow {
+  opacity: 0.4;
+  font-size: 0.85rem;
+}
+
 /* ===================================================
    EXPERIÊNCIA
    =================================================== */
