@@ -1003,6 +1003,7 @@ strong { font-weight: 700; }
 @media (max-width: 640px) {
   .nav__links { display: none; }
   .nav__burger { display: flex; }
+  .lang-toggle:not(.lang-toggle--mobile) { display: none; }
 
   .hero {
     min-height: auto;
